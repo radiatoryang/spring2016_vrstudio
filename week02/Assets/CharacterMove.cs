@@ -10,6 +10,10 @@ public class CharacterMove : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		controller = GetComponent<CharacterController>();
+
+		// render scale is a number from 0-1... 1 = 100% normal quality
+		// set this to a lower number for faster framerate
+		VRSettings.renderScale = 0.5f;
 	}
 	
 	// Update is called once per frame
